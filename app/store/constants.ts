@@ -1,5 +1,9 @@
 // Actions
 export const SESSION_LOGIN = 'SESSION_LOGIN';
+export const SESSION_SAVE_ACCOUNT_INFO = 'SESSION_SAVE_ACCOUNT_INFO';
 
 // Mutations
 export const SESSION_SET_PROPERTY = 'SESSION_SET_PROPERTY';
+
+// Getters
+export const SESSION_IS_LOGGED = 'SESSION_IS_LOGGED';

@@ -1,22 +1,34 @@
 import firebase from 'nativescript-plugin-firebase';
 import * as constants from '@/store/constants';
 
-firebase.init({});
-
 const state = {
-  res: null,
+  displayName: null,
+  profileUpdated: false,
+  photoURL: null,
 };
 
 const actions = {
-  [constants.SESSION_LOGIN]: ({commit}, {email, password}) =>  {
+  [constants.SESSION_LOGIN]: ({commit}, {email, password}) => {
     firebase.login({
       type: firebase.LoginType.PASSWORD,
       passwordOptions: {
         email: email,
         password: password
       }
-    }).then(console.log)
-  }
+    }).then(response => {
+      console.log(response);
+      const displayName = (response.displayName) ? response.displayName : response.email;
+      commit(constants.SESSION_SET_PROPERTY, {property: 'displayName', value: displayName});
+    })
+  },
+  [constants.SESSION_SAVE_ACCOUNT_INFO]: ({commit}, {displayName, photoURL}) => {
+    firebase.updateProfile({displayName, photoURL})
+      .then(() => {
+        commit(constants.SESSION_SET_PROPERTY, {property: 'displayName', value: displayName});
+        commit(constants.SESSION_SET_PROPERTY, {property: 'photoURL', value: photoURL});
+        commit(constants.SESSION_SET_PROPERTY, {property: 'profileUpdated', value: true});
+      });
+  },
 };
 
 const mutations = {
@@ -25,7 +37,9 @@ const mutations = {
   },
 };
 
-const getters = {};
+const getters = {
+  [constants.SESSION_IS_LOGGED]: state => state.displayName !== null,
+};
 
 export default {
   state,
