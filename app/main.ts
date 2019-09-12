@@ -7,9 +7,9 @@ import VueDevtools from 'nativescript-vue-devtools';
 import store from './store';
 import router from './router';
 
-if(TNS_ENV !== 'production') {
-  Vue.use(VueDevtools)
-}
+// if(TNS_ENV !== 'production') {
+//   Vue.use(VueDevtools)
+// }
 
 overrideModalViewMethod();
 Vue.registerElement('ModalStack', () => ModalStack);
@@ -38,13 +38,12 @@ Vue.prototype.$goto = function (to, options) {
       duration: 380,
       curve: "easeIn"
     }
-  }
-  this.$navigateTo(this.$router[to], opts)
-}
+  };
+  this.$navigateTo(this.$router[to], opts);
+};
 
 // Prints Vue logs when --env.production is *NOT* set while building
 Vue.config.silent = (TNS_ENV === 'production');
-
 
 new Vue({
   store,

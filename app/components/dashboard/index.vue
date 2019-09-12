@@ -4,7 +4,8 @@
       <Label class="fas title" textWrap="true" :text="`${String.fromCharCode(0xf2bd)} Mi Cuenta`"
              col="0" row="0"/>
       <FlexboxLayout class="form" flexDirection="column" col="0" row="1" verticalAlignment="middle">
-        <TextField v-model="displayName" hint="Ej: Alexander Von Humboldt" flexGrow="1"/>
+        <TextField v-model="displayName" autocapitalizationType="words"
+                   hint="Ej: Alexander Von Humboldt" flexGrow="1"/>
         <Button :class="classes" :text="saveButtonText" @tap="save"
                 flexGrow="1"/>
       </FlexboxLayout>
@@ -22,8 +23,8 @@
   @Component({
     computed: {
       ...mapState({
-        name: state => state.Session.displayName,
-        profileUpdated: state => state.Session.profileUpdated,
+        name: state => state['Session'].displayName,
+        profileUpdated: state => state['Session'].profileUpdated,
       })
     },
     components: {

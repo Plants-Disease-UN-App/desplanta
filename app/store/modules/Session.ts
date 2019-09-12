@@ -29,6 +29,12 @@ const actions = {
         commit(constants.SESSION_SET_PROPERTY, {property: 'profileUpdated', value: true});
       });
   },
+  [constants.SESSION_SIGNUP]: ({commit}, {email, password}) => {
+    firebase.createUser({email, password})
+      .then((user) => {
+        commit(constants.SESSION_SET_PROPERTY, {property: 'displayName', value: user.email});
+      })
+  },
 };
 
 const mutations = {
