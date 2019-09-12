@@ -1,0 +1,29 @@
+.btn {
+  text-transform: uppercase;
+}
+
+.btn-normal {
+  background-color: $highlight2;
+}
+
+.btn-updated {
+  background-color: $secondary;
+  }
+
+.btn-circle {
+  background-color: $gray1;
+  border-style: solid;
+  width: 50;
+  border-width: 1;
+  android-elevation: 0;
+  padding: 0;
+  margin: 1;
+  color: $primary;
+  border-radius: 100;
+  font-size: 30;
+  font-weight: bold;
+}
+
+.btn-active {
+  color: $secondary;
+}

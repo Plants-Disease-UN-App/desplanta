@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "235113738339",
+    "firebase_url": "https://desplanta.firebaseio.com",
+    "project_id": "desplanta",
+    "storage_bucket": "desplanta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235113738339:android:5aa0cdebfa3146f50b4856",
+        "android_client_info": {
+          "package_name": "app.web.desplanta.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235113738339-07pglr8usm6r4g5c44mjma0fc2t4rc6r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOZchCOaYe59cWcqbmWpebb9_lL8xxDIw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235113738339-07pglr8usm6r4g5c44mjma0fc2t4rc6r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

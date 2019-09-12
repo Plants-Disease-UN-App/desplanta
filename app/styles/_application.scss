@@ -1,0 +1,33 @@
+.app {
+  background-color: $gray1;
+}
+
+.title {
+  background-color: $primary;
+  font-size: 20;
+  padding: 10;
+  color: #fff;
+  text-align: center;
+}
+
+.menu {
+  background-color: $primary;
+  border-style: solid;
+  text-align: center;
+  padding: 2;
+  margin: 0;
+}
+
+.form {
+  text-align: center;
+  align-content: center;
+  padding: 10;
+}
+
+.signin {
+  background-color: $secondary;
+}
+
+.signup {
+  background-color: $highlight1;
+}
