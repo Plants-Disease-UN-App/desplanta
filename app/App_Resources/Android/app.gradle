@@ -17,7 +17,13 @@ android {
     multiDexEnabled true
     applicationId = "app.web.desplanta.mobile"
   }
+  dexOptions {
+      javaMaxHeapSize "4g"
+    }
   aaptOptions {
     additionalParameters "--no-version-vectors"
+    noCompress "tflite"
+    noCompress "lite"
+    noCompress "txt"
   }
 }

@@ -3853,6 +3853,13 @@ nanomatch@^1.2.9:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
+nativescript-camera@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/nativescript-camera/-/nativescript-camera-4.5.0.tgz#92260208cb34e1df5760c66ad16725edf6fbfffd"
+  integrity sha512-Ecw9JH0CNgnGKXfqD1oifMoIOSnKBgWkecwVpdKfrChkQaCdKDFWdfdJ6X8+YTSwJH4n43e74JmrPzLN2eitwQ==
+  dependencies:
+    nativescript-permissions "~1.3.0"
+
 nativescript-dev-webpack@^1.0.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/nativescript-dev-webpack/-/nativescript-dev-webpack-1.2.0.tgz#ccfbffed438075d4bd7a9088a7a80973b9dfff21"
@@ -3902,10 +3909,15 @@ nativescript-hook@0.2.5, nativescript-hook@~0.2.4:
     glob "^6.0.1"
     mkdirp "^0.5.1"
 
-nativescript-plugin-firebase@^9.1.1:
-  version "9.1.1"
-  resolved "https://registry.yarnpkg.com/nativescript-plugin-firebase/-/nativescript-plugin-firebase-9.1.1.tgz#1889a69df8ea06b5f732342de62adae0d7c1e6b6"
-  integrity sha512-wJ8ZrlhSyT9A9QO/F+qJTU/M2WSdIYnFRneGtB7eiyAsMky/9cFEc+9Sn1nbyAWS4xk5YpilxZanG5641RS+9g==
+nativescript-permissions@~1.3.0:
+  version "1.3.8"
+  resolved "https://registry.yarnpkg.com/nativescript-permissions/-/nativescript-permissions-1.3.8.tgz#d0da4a0112213a3df3e384341052244815a46ff1"
+  integrity sha512-jB5U/WbCRPZ2N4ho8WC7OsEi+UtbbpIBZ9OyLzNIUixr/ODdTeTgxXzGT3CUHyKBqYm9MrIADdNzCGbFaUo+KA==
+
+nativescript-plugin-firebase@^10.0.1:
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/nativescript-plugin-firebase/-/nativescript-plugin-firebase-10.0.1.tgz#58f5ffa0d0045d382a11f721ffd004fa4c4aa1e1"
+  integrity sha512-238fhkZjpKH7CsXqgCzJKdPgyTygBIgmeR2tVyU0MeIs1RVB8NUqE2GQn1Dz5WVSl+WPxGLPI/CeAZNiS6h/qg==
   dependencies:
     fs-extra "~2.1.0"
     nativescript-hook "~0.2.4"

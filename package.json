@@ -1,7 +1,7 @@
 {
   "name": "mobile",
   "version": "1.0.0",
-  "description": "DesPlanta Plants Disease Detection",
+  "description": "Plantza Plants Disease Detection",
   "author": "Mesi Rendon <amrendonsa@unal.edu.co>",
   "license": "MIT",
   "nativescript": {
@@ -16,7 +16,8 @@
   },
   "dependencies": {
     "@vue/devtools": "^5.0.6",
-    "nativescript-plugin-firebase": "^9.1.1",
+    "nativescript-camera": "^4.5.0",
+    "nativescript-plugin-firebase": "^10.0.1",
     "nativescript-socketio": "^3.2.1",
     "nativescript-toasty": "^1.3.0",
     "nativescript-vue": "^2.4.0",
