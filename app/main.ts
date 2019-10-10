@@ -15,9 +15,7 @@ overrideModalViewMethod();
 Vue.registerElement('ModalStack', () => ModalStack);
 Vue.use(VueWindowedModal);
 
-firebase.init({
-  showNotificationsWhenInForeground: true
-})
+firebase.init({})
   .then(instance => {
     console.log('Firebase init done');
   })

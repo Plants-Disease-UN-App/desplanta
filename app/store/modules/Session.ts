@@ -4,7 +4,8 @@ import * as constants from '@/store/constants';
 const state = {
   displayName: null,
   profileUpdated: false,
-  photoURL: null,
+  photo: null,
+  email: null,
 };
 
 const actions = {
@@ -19,6 +20,8 @@ const actions = {
       console.log(response);
       const displayName = (response.displayName) ? response.displayName : response.email;
       commit(constants.SESSION_SET_PROPERTY, {property: 'displayName', value: displayName});
+      commit(constants.SESSION_SET_PROPERTY, {property: 'email', value: email});
+      commit(constants.SESSION_SET_PROPERTY, {property: 'photo', value: response.photoURL});
     })
   },
   [constants.SESSION_SAVE_ACCOUNT_INFO]: ({commit}, {displayName, photoURL}) => {

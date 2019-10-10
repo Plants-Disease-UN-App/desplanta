@@ -1,7 +1,7 @@
 <template>
   <Page actionBarHidden="true">
     <GridLayout columns="*" rows="auto,*,auto" class="app">
-      <Label class="fab title" textWrap="true" :text="`${String.fromCharCode(0xf18c)} DesPlanta`"
+      <Label class="fab title" textWrap="true" :text="`${String.fromCharCode(0xf18c)} Plantza`"
              col="0" row="0"/>
       <FlexboxLayout class="form" flexDirection="column" col="0" row="1" verticalAlignment="middle">
         <Label text="Registro" flexGrow="1"/>
